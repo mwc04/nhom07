@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display and Save Image</title>
+    <style>
+      .container {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      #image-container {
+        margin-top: 20px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #333;
+        transition: transform 0.3s ease;
+      }
+
+      #save-link {
+        margin-top: 20px;
+        padding: 5px;
+        font-size: 20px;
+        font-family: "Times New Roman", Times, serif;
+        color: #fff;
+        border-radius: 30px;
+        display: none;
+      }
+
+      #save-link a {
+        text-decoration: none;
+        color: #000;
+      }
+
+      #save-link a:hover {
+        cursor: pointer;
+        background-color: #333;
+      }
+
+      #controls {
+        margin-top: 20px;
+        height: auto;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 5px;
+        border-radius: 20px;
+        color: #000;
+        font-weight: bold;
+        box-shadow: 1px 1px 2px 2px #000;
+      }
+      button:hover {
+        cursor: pointer;
+        background-color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="input-container">
+        <input type="file" id="image-file" accept="image/*" />
+        <button onclick="displayImage()">Hiển thị hình ảnh</button>
+      </div>
+
+      <div id="image-container"></div>
+
+      <button id="save-link">
+        <a href="" download="downloaded_image.png">Lưu hình ảnh</a>
+      </button>
+
+      <div id="controls">
+        <button onclick="zoomIn()">Phóng to</button>
+        <button onclick="zoomOut()">Thu nhỏ</button>
+        <button onclick="resetZoom()">Reset</button>
+      </div>
+    </div>
+
+    <script>
+      let scale = 1;
+      let imgElement;
+
+      function displayImage() {
+        const fileInput = document.getElementById("image-file");
+        const file = fileInput.files[0];
+        const imageContainer = document.getElementById("image-container");
+        const saveLink = document.getElementById("save-link");
+
+        if (file) {
+          const reader = new FileReader();
+
+          reader.onload = function (e) {
+            const imageSrc = e.target.result;
+            imageContainer.innerHTML = `<img src="${imageSrc}" id="zoomable-image" alt="Image" />`;
+            imgElement = document.getElementById("zoomable-image");
+
+            saveLink.href = imageSrc;
+            saveLink.style.display = "inline";
+          };
+
+          reader.readAsDataURL(file);
+        } else {
+          imageContainer.innerHTML = "Please select a valid image file.";
+          saveLink.style.display = "none";
+        }
+      }
+
+      function zoomIn() {
+        if (imgElement) {
+          scale += 0.1;
+          imgElement.style.transform = `scale(${scale})`;
+        }
+      }
+
+      function zoomOut() {
+        if (imgElement && scale > 0.1) {
+          scale -= 0.1;
+          imgElement.style.transform = `scale(${scale})`;
+        }
+      }
+
+      function resetZoom() {
+        if (imgElement) {
+          scale = 1;
+          imgElement.style.transform = `scale(${scale})`;
+        }
+      }
+    </script>
+  </body>
+</html>

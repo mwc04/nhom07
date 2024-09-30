@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>ĐĂNG KÝ NHẬN ƯU ĐÃI</h2>
+      </div>
+
+      <div class="form">
+        <form action="">
+          <div class="form-conten">
+            <span>Họ và tên:</span><br />
+            <input type="text" name="name-user" /><br />
+          </div>
+
+          <div class="form-conten">
+            <span>Số điện thoại:</span><br />
+            <input
+              type="tel"
+              pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+              name="telephone"
+            /><br />
+          </div>
+
+          <div class="form-conten">
+            <span>Email:</span><br />
+            <input type="email" name="email" /><br />
+          </div>
+
+          <div class="form-conten">
+            <span>Chọn dịch vụ ưu đãi</span> <br />
+            <select name="select" id="">
+              <option value="">Tên miền</option>
+            </select>
+          </div>
+        </form>
+      </div>
+
+      <div class="check-box">
+        <div class="img-conten robot">
+          <input type="checkbox" name="vehicle1" value="I am not robot" />
+          <label for="vehicle1"> I am not robot</label><br />
+        </div>
+
+        <div class="img-conten">
+          <img src="/img/capchar.jpg" alt="" width="50px" height="50px" />
+          <p>
+            reCAPTCHA<br />
+            Privacy - Terms
+          </p>
+        </div>
+      </div>
+
+      <div class="button">
+        <div class="button-conten">
+          <button type="submit">Đăng ký ngay</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

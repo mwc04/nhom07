@@ -1,0 +1,113 @@
+/* .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item a {
+  display: block;
+  padding: 14px 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #0c4ca3;
+}
+
+.menu-item a:hover {
+  background-color: #0c4ca3;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #0c4ca3;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+.dropdown li {
+  border-bottom: 1px solid #444;
+}
+
+.display {
+  display: flex;
+}
+.dropdown li a {
+  padding: 10px;
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.dropdown li a:hover {
+  background-color: #575757;
+}
+
+.menu-item:hover .dropdown {
+  display: block;
+}
+
+h3 {
+  text-decoration: underline;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Kích thước tùy ý cho container ảnh */
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt 50% */
+  z-index: 1;
+  transition: opacity 0.5s ease; /* Hiệu ứng chuyển đổi mượt mà */
+  opacity: 1; /* Ban đầu overlay sẽ hiện lên */
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  z-index: 2;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.image-container:hover .overlay {
+  opacity: 0; /* Khi hover, lớp overlay sẽ biến mất */
+}
+
+.image-container:hover .text {
+  opacity: 0; /* Khi hover, văn bản cũng biến mất */
+}

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>Cổng thông tin Đào tạo Đại học, Trường Đại học Mỏ - Địa Chất</title>
+  </head>
+  <body>
+    <style>
+      button {
+        color: #32a5e7;
+        background-color: #fff;
+      }
+      td {
+        font-family: sans-serif;
+        font-size: 15px;
+      }
+    </style>
+
+    <div>
+      <div>
+        <select name="hocKy" id="">
+          <option value="0">Học kì 1 Năm Học 2024-2025</option>
+          <option value="1">Học kì 2 Năm Học 2024-2025</option>
+          <option value="2">Học kì 1 Năm Học 2025-2026</option>
+        </select>
+        <select name="hocKy" id="">
+          <option value="0">Thời khóa biểu cá nhân</option>
+          <option value="1">Thời khóa biểu lớp sinh viên</option>
+          <option value="2">Thời khóa biểu lớp</option>
+          <option value="3">Thời khóa biểu môn học</option>
+          <option value="4">Thời khóa biểu khoa quản lý sinh viên</option>
+        </select>
+      </div>
+
+      <!-- phan select hoc tu ngay nao -->
+      <div>
+        <select name="tuan_hoc" id="">
+          <option value="0">
+            Tuần 1 [từ ngày 05/08/2024 đến ngày 11/08/2024]
+          </option>
+          <option value="1">
+            Tuần 2 [từ ngày 12/08/2024 đến ngày 18/08/2024]
+          </option>
+          <option value="2">
+            Tuần 3 [từ ngày 19/08/2024 đến ngày 25/08/2024]
+          </option>
+          <option value="3">
+            Tuần 4 [từ ngày 26/08/2024 đến ngày 01/09/2024]
+          </option>
+          <option value="4">
+            Tuần 5 [từ ngày 02/09/2024 đến ngày 08/09/2024]
+          </option>
+          <option value="6">
+            Tuần 6 [từ ngày 09/09/2024 đến ngày 15/09/2024]
+          </option>
+          <option value="7">
+            **********************************************************************************
+          </option>
+        </select>
+
+        <button><i class="fa-solid fa-print"></i> In</button>
+      </div>
+
+      <!-- phần bảng thời khóa biểu -->
+      <div>
+        <table border="1" color="#eff0f3" height="500px;" cellspacing="0">
+          <tr>
+            <td align="center">
+              <font color="#3ba9e8"> Trước</font>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 2</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 3</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 4</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 5</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 6</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 7</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Chủ Nhật</font></p>
+            </td>
+            <td align="center">
+              <font color="#3ba9e8">Sau</font>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 1</font>
+            </td>
+            <td><br /><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td
+              class="boder_botom"
+              rowspan="3"
+              style="background-color: #cfe2ff"
+            >
+              <strong>Lịch sử Đảng Cộng sản Việt Nam</strong> <br />
+              <strong>(7080303)</strong> <br />
+              <strong>Nhóm:</strong>200 <br />
+              <strong>Phòng:</strong> HNAB203-b203
+              <br />
+              <span> <strong>GV:</strong> Đặng Thị Thanh Trâm </span>
+            </td>
+            <td
+              class="boder_botom"
+              rowspan="2"
+              style="background-color: #cfe2ff"
+            >
+              <strong>Mã nguồn mở</strong> <br />
+              <strong>(7080111)</strong> <br />
+              <strong>Nhóm:</strong>13 <br />
+              <strong>Phòng:</strong> HNAB207-B207<br />
+              <span> <strong>GV:</strong>Trần Mai Hương </span>
+            </td>
+            <td
+              class="boder_botom"
+              rowspan="3"
+              style="background-color: #cfe2ff"
+            >
+              <strong
+                >Phát triển ứng dụng web GIS<br />
+                với python và javascript</strong
+              >
+              <br />
+              <strong>(7080302)</strong> <br />
+              <strong>Nhóm:</strong>13 <br />
+              <strong>Phòng:</strong> HNAD503-D5-3
+              <br />
+              <span> <strong>GV:</strong>Nguyễn Hoàng Long </span>
+            </td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">06:45</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 2</font>
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><font color="#fff">Nhóm:13 Phòng: HNAD503-D5- </font></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">07:45</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 3</font>
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td>
+              <br />
+              <br />
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">08:45</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 4</font>
+            </td>
+            <td><br /><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">09:45</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 5</font>
+            </td>
+            <td>
+              <br />
+              <br />
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">10:45</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 6</font>
+            </td>
+            <td>
+              <br />
+              <br />
+            </td>
+            <td><br /></td>
+            <td
+              class="boder_botom"
+              rowspan="3"
+              style="background-color: #cfe2ff"
+            >
+              <strong>Cơ sở an ning mạng</strong> <br />
+              <strong>(7080703)</strong> <br />
+              <strong>Nhóm:</strong>07 <strong>Phòng:</strong> HNAD303-D3-3
+              <br />
+              <span> <strong>GV:</strong>Đặng Quốc Trung </span>
+            </td>
+            <td><br /></td>
+            <td
+              class="boder_botom"
+              rowspan="2"
+              style="background-color: #cfe2ff"
+            >
+              <strong>Phát triển ứng dụng Web + BTL</strong> <br />
+              <strong>(7080116)</strong> <br />
+              <strong>Nhóm:</strong>10 <strong>Phòng:</strong> HNAA305-A305
+              <br />
+              <span> <strong>GV:</strong>Ngô Ngọc Anh </span>
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">12:30</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 7</font>
+            </td>
+            <td>
+              <br />
+              <br />
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">13:30</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 8</font>
+            </td>
+            <td
+              class="boder_botom"
+              rowspan="2"
+              style="background-color: #cfe2ff"
+            >
+              <strong>Lịch sử Đảng Cộng sản Việt Nam</strong> <br />
+              <strong>(7080303)</strong> <br />
+              <strong>Nhóm:</strong>13 <br />
+              <strong>Phòng:</strong> HNAB203-b203
+              <br />
+              <strong>GV:</strong> Đặng Thị Thanh Trâm
+            </td>
+            <td
+              class="boder_botom"
+              rowspan="2"
+              style="background-color: #cfe2ff"
+            >
+              <strong>Cơ sở xử lý ảnh số</strong> <br />
+              <strong>(7080302)</strong> <br />
+              <strong>Nhóm:</strong>13 <strong>Phòng:</strong> HNAD503-D5-3
+            </td>
+            <td><br /></td>
+            <td
+              class="boder_botom"
+              rowspan="2"
+              style="background-color: #cfe2ff"
+            >
+              <strong>Lịch sử Đảng Cộng sản Việt Nam</strong> <br />
+              <strong>(7080303)</strong> <br />
+              <strong>Nhóm:</strong>13 <br />
+              <strong>Phòng:</strong> HNAB203-b203
+              <br />
+              <span> <strong>GV:</strong> Đặng Thị Thanh Trâm </span>
+            </td>
+            <td>
+              <br />
+            </td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">14:30</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 9</font>
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">15:30</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết&nbsp;10</font>
+            </td>
+            <td
+              class="boder_botom"
+              rowspan="2"
+              style="background-color: #cfe2ff"
+            >
+              <strong>Phát triển ứng dụng Web + BTL</strong> <br />
+              <strong>(7080116)</strong> <br />
+              <strong>Nhóm:</strong>10 <br />
+              <strong>Phòng:</strong> HNAA305-A305
+              <br />
+              <span> <strong>GV:</strong>Ngô Ngọc Anh </span>
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">16:30</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 11</font>
+            </td>
+            <td>
+              <br />
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">17:30</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 12</font>
+            </td>
+            <td>
+              <br />
+              <br />
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">18:30</font>
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">Tiết 13</font>
+            </td>
+            <td>
+              <br />
+              <br />
+            </td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td><br /></td>
+            <td style="background-color: #32a5e7" align="center">
+              <font color="#fff">19:30</font>
+            </td>
+          </tr>
+          <!-- <tr >
+            <th align="center"><i class="fa-solid fa-left-long"></i> Trước</th>
+            <th style="background-color:#32A5E7" align="center">Thứ 2</th>
+            <th style="background-color:#32A5E7" align="center">Thứ 3</th>
+            <th style="background-color:#32A5E7" align="center">Thứ 4</th>
+            <th style="background-color:#32A5E7" align="center">Thứ 5</th>
+            <th style="background-color:#32A5E7" align="center">Thứ 6</th>
+            <th style="background-color:#32A5E7" align="center">Thứ 7</th>
+            <th style="background-color:#32A5E7" align="center">Chủ Nhật</th>
+            <th align="center">Sau <i class="fa-solid fa-right-long"></i></th>
+          </tr> -->
+
+          <tr>
+            <td align="center"><font color="#3ba9e8"> Trước</font></td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 2</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 3</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 4</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 5</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 6</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Thứ 7</font></p>
+            </td>
+            <td style="background-color: #32a5e7" align="center">
+              <p><font color="#fff">Chủ Nhật</font></p>
+            </td>
+            <td align="center">
+              <font color="#3ba9e8">Sau</font>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

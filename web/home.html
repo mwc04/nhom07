@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <>
+    <form action="">
+      <table border="1" width="70%">
+        <tr>
+          <th colspan="2"><strong>Form Đăng Ký</strong></th>
+        </tr>
+
+        <tr>
+          <th align="center"><strong>Họ và tên:</strong></th>
+          <th><input type="text" placeholder="Nhập tên vào đây" /></th>
+        </tr>
+
+        <tr>
+          <th align="center"><strong>Email:</strong></th>
+          <th><input type="email" placeholder="Nhập Email vào đây" /></th>
+        </tr>
+
+        <tr>
+          <th align="center"><strong>Mật khẩu:</strong></th>
+          <th><input type="password" placeholder="Nhập password vào đây" /></th>
+        </tr>
+
+        <tr>
+          <th align="center"><strong>Ngày sinh</strong></th>
+          <th><input type="date" placeholder="Nhập date vào đây" /></th>
+        </tr>
+
+        <tr>
+          <th align="center"><strong>Số điện thoại</strong></th>
+          <th>
+            <input
+              type="tel"
+              placeholder="Dạng số: 0971117492"
+              required
+              size="20"
+            />
+            />
+          </th>
+        </tr>
+
+        <tr>
+          <th align="center"><strong>Giới tính:</strong></th>
+          <th>
+            <input type="radio" name="sex" value="male" />
+            nam
+            <input type="radio" name="sex" value="female" />
+            nữ
+            <input type="radio" name="sex" value="unknow" />
+            chưa rõ
+          </th>
+        </tr>
+
+        <tr>
+          <th align="center">Sở thích:</th>
+          <th>
+            <input type="checkbox" name="a" value="Ngủ" /> Ngủ
+            <input type="checkbox" name="a" value="Mua Sắm" /> Mua Sắm
+            <input type="checkbox" name="a" value="Du Lịch" /> Du Lịch
+            <input type="checkbox" name="a" value="Học" /> Học
+          </th>
+        </tr>
+
+        <tr>
+          <th colspan="2">
+            <form method="post">
+              <button type="submit">Gửi</button>
+              <button type="reset">Reset</button>
+            </form>
+          </th>
+        </tr>
+      </table>
+    </form>
+
+    <div>
+      <h1>Bài 2: Tính cạnh huyền tam giác vuông</h1>
+    </div>
+
+    <!-- oninput="x.value= Math.sqrt(((parseFloat(a.value)**2) + parseFloat(b.value)**2))" -->
+      <form
+        oninput="x.value= Math.sqrt(Math.pow(parseFloat(a.value),2) + Math.pow(parseFloat(b.value),2))"
+      >
+        <h1><font color="red">Tính cạnh huyền tam giác vuông</font></h1>
+        <table>
+          <tr>
+            <td bgcolor="#3ba9e8">
+              Cạnh A<input type="number" name="a" value="0" size="1" />
+            </td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#3ba9e8">
+              Cạch B<input type="number" name="b" value="0" size="1"
+            </td>
+          </tr>
+
+          <tr>
+            <td bgcolor="#3ba9e8 ">
+              <output name="x" for="a b">Cạnh Huyền: </output>
+            </td>
+          </tr>
+        </table>
+        <p>Công thức:</p>
+        <p>Căn Bậc hai: Math.sqrl(x)</p>
+        <p>Bình phương: Math.pow(x.2)</p>
+      </form>
+
+    <h1>Bài 3:</h1>
+
+    <h1>Đăng Ký</h1>
+  ________________________
+    <p>Nhanh chóng dễ dàng</p>
+   
+
+    <form action="" method="get">
+    <input size="8" type="text" placeholder="Họ" />
+    <input size="8" type="text" placeholder="Tên" />
+    <p>
+      <input
+        type="tel"
+        type="email"
+        placeholder="Nhập số di động hoặc email"
+        pattern="[0-3]{2}[0-9]{8}"
+        size="22"
+      />
+    </p>
+
+    <p><input type="password" placeholder="Nhập mật khẩu mới" size="22" /></p>
+
+    Ngày Sinh: <br />
+
+    <select id="" class="table_select1">
+      <option value="0">29</option>
+      <option value="1"></option>
+      <option value="2"></option>
+    </select>
+
+    <select id="" class="table_select1">
+      <option value="0">Tháng 8</option>
+      <option value="1"></option>
+      <option value="2"></option>
+    </select>
+
+    <select id="" class="table_select1">
+      <option value="0">2024</option>
+      <option value="1"></option>
+      <option value="2"></option>
+    </select>
+    <br /><br />
+
+    Giới Tính: <br />
+    |<input type="radio" /> Nam | <input type="radio" /> Nữ |
+    <input type="radio" /> Tùy chỉnh |
+    <script src="index.js"></script>
+
+    <p>
+      Những người dùng dịch vụ của chúng tôi có thể đã tải thông tin liên hệ của
+      bạn len facebook <a href="#">Tìm hiểu Thêm</a>
+    </p>
+    <p>
+      Bằng cách nhấp vào đăng ký, bạn đồng ý với <a href="#">điều khoản</a>.
+      <a href="#">Chính sách quyền riêng tư </a> và
+    </p>
+
+    <input type="submit" value="login">
+
+  </form>
+  </body>
+</html>

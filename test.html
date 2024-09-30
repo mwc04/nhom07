@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <input type="file" id="getImg" accept="image/*" />
+      <button onclick="showimg()">Hiển thị hình ảnh</button>
+    </div>
+
+    <div id="container-img"></div>
+
+    <script>
+      let imgElement;
+
+      function showimg() {
+        const fileInput = document.getElementById("getImg");
+        const file = fileInput.files[0];
+        const imageContainer = document.getElementById("container-img");
+
+        if (file) {
+          const render = new FileReader();
+
+          render.onload = function (e) {
+            const imagesrc = e.target.result;
+            imageContainer.innerHTML = `<img src="${imagesrc} id="zoomable-image" alt="Image" />"`;
+            imgElement = document.getElementById("zoomable-image");
+          };
+          render.readAsDataURL(file);
+        }
+      }
+    </script>
+  </body>
+</html>

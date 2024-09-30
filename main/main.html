@@ -1,0 +1,253 @@
+<html>
+  <head>
+    <title>Bài thực hành HTML</title>
+    <link />
+    <meta />
+    <script></script>
+  </head>
+
+  <body>
+    <!-- <marquee
+      ><img src="/img/background.png" alt="" width="100px" height="100px"
+    /></marquee> -->
+    <style>
+      .container_login {
+        background-color: hsl(105, 82%, 40%);
+        margin: 0 60px;
+        width: 300px;
+        height: 100px;
+      }
+
+      .Dangnhap {
+        background-color: hsl(240, 72%, 80%);
+      }
+      .Dangky {
+        background-color: hsl(180, 75%, 45%);
+        border-radius: 3px;
+        border: none;
+        padding: 6px;
+        margin-left: 40px;
+      }
+    </style>
+    <!-- Cau lenh dau tien HTML -->
+    <!-- de viet chu thich nhanh dung to hop Ctrl k c -->
+    <h1>Hello world!</h1>
+    <h2>Hello world! H2</h2>
+    <!-- the strong
+             the b in dam
+             the i in nghieng
+             the u chu gach chan -->
+    <b>xin chao</b> <i>cac ban nhom 7</i> <br /><br />
+    <u>lap trinh web</u>
+    <!-- the face font chu
+             the size kich thuoc
+             the color mau sac -->
+    <br />
+    <font face="verdana" size="10" color="pink">Font chu su dung verdana</font>
+    <br />
+    <font size="10px">Size 10</font>
+    <br />
+    <font color="blue">mau xanh</font>
+    <!-- chi so tren -->
+    <br />
+    x<sup>2</sup>
+
+    <!-- chi so duoi= -->
+    <br />
+    H<sub>2</sub>
+    <!-- The dinh dang khoi -->
+    <div>Doan nay dung the div</div>
+    <span>Doan nay dung the span</span>
+    <!-- the img src chen anh -->
+    <img src="/img/background.png " width="100px" height="100px" />
+    <br /><br />
+    <a href="https://www.youtube.com/"> </a>
+    <div>
+      <table border="1">
+        <caption>
+          Thong tin sinh vien
+        </caption>
+        <tr>
+          <th>STT</th>
+          <th>Ho va ten</th>
+          <th>Lop</th>
+          <th>Khoa</th>
+          <th>MSV</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Tran Anh Duc</td>
+          <td>DCCTCT67_07A</td>
+          <td rowspan="2">Cong nghe thong tin</td>
+          <td>12345</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Tran Anh Du</td>
+          <td>DCCTCT67_07A</td>
+
+          <td>23455</td>
+        </tr>
+        <tr>
+          <td colspan="5" align="center">Het danh sach</td>
+        </tr>
+      </table>
+    </div>
+    <!-- Danh sách  -->
+    <!-- Danh sách có thứ tự -->
+    <!-- ol: ordered list -->
+    <!-- li: list item -->
+    Công việc cần làm trong ngày:
+    <ol>
+      <li>ngủ</li>
+      <li>chơi</li>
+    </ol>
+    <!-- danh sách k thứ tự Unorderedlist: ul -->
+    4 tính chất oop:
+    <ul>
+      <li>Đóng gói</li>
+      <li>Kế thừa</li>
+      <li>Đa hình</li>
+      <li>Trừu tượng</li>
+    </ul>
+    <form>
+      <input type="submit" name="submit" />
+      <input type="reset" />
+
+      Year: <input type="text" name="firstName" value="2024" readonly />
+      <br />
+      <br />
+      first name:
+      <input type="text" name="firstName" placeholder="Nhập và họ" />
+      <br />
+      <br />
+      last name:
+      <input type="text" name="lirstName" placeholder="Nhập và tên" />
+      <br />
+      <br />
+      Lyric of song: <textarea>Ai sợ thì ..................</textarea>
+      <br /><br />
+      Email: <input type="email" name="youremail" /> <br /><br />
+      <!-- <input name ="telephone"
+                   type="tel"
+                   placeholder="Dạng số: 1-234-456-789"
+                   required
+                   size="20"
+                   pattern="([0-9]{1}(-[0-9]{3})(-[0-9]){3})(-[0-9]{4})"> -->
+
+      <input type="submit" />
+      <br />
+      <input type="radio" name="sex" value="male" /> male<br />
+      <input type="radio" name="sex" value="female" /> female<br />
+      <input type="radio" name="sex" value="unknow" /> unknow<br />
+      Game: <input type="checkbox" name="hobby" value="game" /><br />
+      Music: <input type="checkbox" name="hobby" value="Music" /><br />
+      Sport: <input type="checkbox" name="hobby" value="Sport" /><br />
+      <br />
+
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Chrome"></option>
+      </datalist>
+      <br />
+
+      <select name="browsers">
+        <option value="0">Internet Explorer</option>
+        <option value="1">Firefox</option>
+        <option value="2">Chrome</option>
+        <option value="3">Opera</option>
+        <option value="4">Cốc cốc</option>
+        <option value="5">Safari</option>
+      </select>
+      <br />
+      0 <input type="range" id="a" value="50" />100
+      <br />
+      Quantity (bewteen 1 and 5):
+      <input type="number" name="Quantity" min="1" max="5" step="0.1" />
+    </form>
+    <br />
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+      10 <input type="range" id="a" value="50" />100 +
+      <input type="number" id="b" value="50" />=
+      <output name="x" for="a b"></output>
+    </form>
+
+    <form
+      oninput="x.value=(parseInt(a.value)+parseInt(b.value)+parseInt(c.value))/3"
+    >
+      <input type="number" id="a" value="50" /><br />
+      <input type="number" id="b" value="50" /><br />
+      <input type="number" id="c" value="50" /><br />
+      <output name="x" for="a b c">50</output>
+      <br />
+      <input type="button" value="Submit"
+    </form>
+    <br /><br />
+    <div class="container_login">
+      <form method="post">
+        tai khoản :
+        <input type="text" name="user" placeholder="nhap name" /><br />
+        mật khẩu :
+        <input
+          type="password"
+          name="password"
+          placeholder="nhap password"
+        /><br /><br />
+        <button class="Dangnhap" type="submit">
+          <a href="/web/index.html">Submit</a>
+        </button>
+        <button class="Dangky" type="">Đăng ký</button>
+      </form>
+    </div>
+
+    <form oninput="x.value=(parseFloat(a.value) + parseFloat(b.value)* 2 )">
+      <h1>chu vi hinh chu nhat</h1>
+      ( <input type="text" name="a" value="1" size="1" />+
+      <input type="text" name="b" value="1" size="1" /> ) / 2
+
+      <output name="x" for="a b"> = 1</output>
+    </form>
+
+    <form oninput="x.value=(parseFloat(a.value) * parseFloat(b.value) )">
+      <h1>dien tich hinh chu nhat</h1>
+      <input type="text" name="a" value="1" size="1" /> *
+      <input type="text" name="b" value="1" size="1" />
+      <output name="x" for="a b"> = 1</output>
+    </form>
+
+    <!-- <iframe src="" frameborder="0"></iframe>  lấy dịa chỉ link web -->
+
+    <audio
+      controls
+      src="/music/Nhạc English Chill Tik Tok Nhẹ Nhàng - Những Bài Hát Tiếng Anh Cực Chill Hot Nhất Trên TikTok.mp4"
+      type="video/mp3"
+    >
+      this is music
+    </audio>
+    <!-- 
+    de gắn link nhac -->
+
+    <video
+      controls
+      width="500px"
+      height="500px"
+      src="/music/Nhạc English Chill Tik Tok Nhẹ Nhàng - Những Bài Hát Tiếng Anh Cực Chill Hot Nhất Trên TikTok.mp4"
+    ></video>
+
+    <ul>
+      <li>Dấu cách: &nbsp;</li>
+      <li>Dấu <: &lt</li>
+      <li>Dấu >: &gt</li>
+      <li>Dấu &: &amp;</li>
+      <li>Dấu ": &quot;</li>
+      <li>Dấu @: &copy;</li>
+    </ul>
+
+    &lth1&gtdien tich hinh chu nhat&lt/h1&gt <br />
+    &ltform oninput="x.value=(parseFloat(a.value) * parseFloat(b.value) )"&gt<br />
+    &ltinput type="text" name="a" value="1" size="1" /&gt * <br />
+    &ltinput type="text" name="b"value="1" size="1" /&gt <br />
+    &ltoutput name="x" for="a b"&gt = 1&lt/output&gt&lt/form&gt
+  </body>
+</html>

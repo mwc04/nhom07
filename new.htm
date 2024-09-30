@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap; /* Để các thẻ xuống hàng khi đủ số lượng */
+        width: 100%; /* Đặt chiều rộng của container */
+      }
+
+      .box {
+        width: 25%; /* Mỗi thẻ div chiếm 1/4 (25%) chiều rộng */
+        height: 150px; /* Chiều cao tùy ý */
+        background-color: #ccc;
+        box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi kích thước */
+        margin: 0; /* Loại bỏ margin */
+        padding: 0; /* Loại bỏ padding */
+        border: 1px solid #000;
+      }
+
+      .trapezoid {
+        width: 20px;
+        height: 0;
+        border-top: 100px solid #3498db; /* Đỉnh lớn ở dưới */
+        
+        border-right: 50px solid transparent; /* Cạnh xiên phải */
+        border-bottom: 0 solid transparent;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div> -->
+
+      <div class="trapezoid ">
+        
+      </div>
+
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.title {
+}
+
+.banner {
+  justify-content: center;
+  display: flex;
+}
+
+.news {
+  display: flex;
+  background-color: aqua;
+}
+
+.new {
+  background-color: aqua;
+  width: 400px;
+  height: 500px;
+}
